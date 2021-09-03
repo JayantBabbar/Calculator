@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  height: 100vh;
+  background: #DAD299;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wrapper {
+    width: 550px;
+    background-color: rgb(214, 209, 209);
+    color: white;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+
+.screen{
+    background-color: black;
+    padding: 20px 10px 5px;
+}
+
+.current-val{
+    font-size: 40px;
+    text-align: right;
+}
+.result{
+    font-size: 18px;
+}
+.equation{
+    font-size: 18px;
+    text-align: right;
+}
+
+
+.calc-btn-rows{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    margin-top: 0.2%;
+   
+}
+.calc-btn{
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    font-size: 40px;
+    height: 98px;
+    flex-basis: 24.8%;
+    cursor: pointer;
+    transition: background-color 300ms linear;
+}
+
+
+
+.calc-btn:hover{
+    background-color: rgb(230, 230, 230);
+}
+.calc-btn:active{
+    background-color: rgb(190, 190, 190);
+}
+.calc-btn:last-child{
+    background-color: rgb(252, 122, 47);
+    color: rgb(255, 255, 255);
+}
+.calc-btn:last-child:hover{
+    background-color: rgb(238, 90, 4);
+}
+.calc-btn:last-child:active{
+    background-color: rgb(250, 135, 68);
+}
+
+.double{
+    flex-basis: 49.8%;
+}
+.triple{
+    flex-basis: 74.8%;
+}
+
+
